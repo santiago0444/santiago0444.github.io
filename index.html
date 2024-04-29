@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos para el mensaje del ganador */
+        #mensajeGanador {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+        /* Estilos para el diálogo de selección de color */
+        #seleccionColor {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div id="tablero"></div>
+
+    <div id="mensajeGanador"></div>
+
+    <div id="seleccionColor">
+        <p>Elige el color de tus piezas:</p>
+        <button id="blancasBtn">Blancas</button>
+        <button id="negrasBtn">Negras</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
